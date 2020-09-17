@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ProcesoHerramientas</servlet-name>
+        <servlet-class>controlador.ProcesoHerramientas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProcesoIngresarUsuario</servlet-name>
+        <servlet-class>controlador.ProcesoIngresarUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProcesoPrestamo</servlet-name>
+        <servlet-class>controlador.ProcesoPrestamo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProcesoUsuarios</servlet-name>
+        <servlet-class>controlador.ProcesoUsuarios</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProcesoPersonal</servlet-name>
+        <servlet-class>controlador.ProcesoPersonal</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProcesoCategoria</servlet-name>
+        <servlet-class>controlador.ProcesoCategoria</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProcesoHerramientas</servlet-name>
+        <url-pattern>/procesoHerramienta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcesoIngresarUsuario</servlet-name>
+        <url-pattern>/procesoIngresarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcesoPrestamo</servlet-name>
+        <url-pattern>/procesoPrestamo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcesoUsuarios</servlet-name>
+        <url-pattern>/procesoUsuarios</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcesoPersonal</servlet-name>
+        <url-pattern>/procesoPersonal</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcesoCategoria</servlet-name>
+        <url-pattern>/procesoCategoria</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+</web-app>
